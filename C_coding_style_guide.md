@@ -120,9 +120,9 @@ You're not even following a style. That makes code unreadable. I stop reading co
 
 ===
 
-All functions, `if`s, `for`s, `while`s and etc, should all be followed by opening parentheses.
+All functions, `if`s, `for`s, `while`s and etc, should all be followed by opening parentheses, with no spaces between them.
 
-Actually, ALL parentheses and brackets should (almost) never contain any space before nor after it.
+Actually, ALL parentheses and brackets should (almost) never contain any space before nor after it, unless it's a sub-expression.
 
     /* OK! */
     while(1);
@@ -157,6 +157,11 @@ Operators that **should not** use spaces:
     (float)var;
     if(!b);
     
+Also, all casts should contain NO spaces:
+
+    int a = (int)b;
+    unsigned char *s = (unsigned char *)mem;
+        
 Explanation:
 I ain't CodeGolfing or IOCCC'ing, so I find these the most appropriate form for my code.
 
@@ -193,6 +198,11 @@ Example:
     						
     						case 40:
     								return -1;
+    								
+    						default:
+    								b = b * 250;
+    								
+    								break;
     				}
     		}
     		
