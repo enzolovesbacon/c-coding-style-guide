@@ -46,7 +46,7 @@ A file should be organized as follows:
 2. `#include`s
 3. Preprocessor macros
 4. External globals
-5. Local globals (variables, `struct`s, `typedef`s, etc)
+5. Local globals (variables, `struct`s, etc)
 6. Functions prototypes
 7. Functions definitions
 
@@ -367,7 +367,7 @@ I call a section, each block of code that makes sense to be read together and th
     /* OK! */
     int function(char *string, int len, int flag) {
             char *s = malloc(len);
-            int x;
+            int x = 0;
             
             if(FLAGS & flag) {
                     x = -1;
