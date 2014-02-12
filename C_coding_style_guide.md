@@ -30,7 +30,7 @@ I believe it makes my code well structured and clear enough for understanding.
 [↑ top](#Index)
 
 * Inconsolata, 12pt
-* Color scheme base16-default.dark.256 - > LINK <
+* Color scheme [base16-default.dark.256](https://github.com/chriskempson/base16-iterm2/)
 
 This is what I use for iTerm2 and I customized Xcode color scheme to look like the same.
 
