@@ -310,6 +310,7 @@ Declaration doesn't necessarily implies initialization. For example, if you decl
     a = 4096;
     *b = malloc(4 * 1000);
     c = -5;
+    d = 0;
     
     /* NOT OK!!! */
     int x, y = 10, z;
@@ -328,7 +329,7 @@ Structs should be declared at the "Global variables" section of the file.
 
 Function names must be a-z lowercase and might contain _ (underscores). Underscores are prefered instead of CamelCase.
 
-Abbreviation is ok, as long as it makes sense, e.g.: `process(&val)` is prefered over `p(&val)`, or `int return_value`, or `int r`;
+Abbreviation is ok, as long as it makes sense, e.g.: `proc(&val)` is prefered over `p(&val)`, or `process_and_update(&val)`;
 
 I separate a function into "sections".
 
